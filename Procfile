@@ -1,1 +1,1 @@
-web:gunicorn django_todo.wsgi:application
+web:gunicorn todo-app-django-ivemcd.wsgi:application

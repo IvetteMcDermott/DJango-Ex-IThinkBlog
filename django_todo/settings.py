@@ -29,7 +29,7 @@ SECRET_KEY = S_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['todo-app-django-ivemcd.herokuapp.com']
 
 
 # Application definition

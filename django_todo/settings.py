@@ -13,7 +13,7 @@ from pathlib import Path
 import dj_database_url
 from env import DATABASE_URL
 from pathlib import Path
-from env import S_KEY
+# from env import S_KEY
 import os
 
 development = os.environ.get('DEVELOPMENT', False)
@@ -26,13 +26,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'S_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
 if development:
-    ALLOWED_HOSTS = ['local host']
+    ALLOWED_HOSTS = ['localhost']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 

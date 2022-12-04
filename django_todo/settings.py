@@ -12,7 +12,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 from pathlib import Path
-from env import DATABASE_URL
+# from env import DATABASE_URL
 from pathlib import Path
 # from env import S_KEY
 import os
